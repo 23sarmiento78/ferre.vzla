@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferre.SA - Distribuidor Mayorista de Sistemas Hidráulicos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="css2/styles.css">
+</head>
+<body>
+ <header>
+    <nav class="container">
+      <div class="logo">ferre.Sa</div>
+      <div class="nav-links">
+        <a href="#productos">Productos</a>
+        <a href="#cita">Agendar Cita</a>
+        <a href=>nosotros</a>
+      </div>
+    </nav>
+  </header>
+<style>
+  body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("amarillo.png"); /* Reemplaza 'TU_IMAGEN.jpg' con la URL de tu imagen */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  will-change: transform;
+}
+
+body {
+  perspective: 1px; /* Esto crea una capa de fondo que se mueve más lentamente */
+}
+
+body:hover::before {
+  animation: moveBackground 20s infinite linear;
+}
+
+@keyframes moveBackground {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(0, -50px); }
+  100% { transform: translate(0, 0); }
+}
+
+</style>
+  <main>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Soluciones Hidráulicas de Alta Calidad</h1>
+          <p>Distribuidor mayorista especializado en sistemas hidráulicos y accesorios</p>
+          <a href="file:///C:/Users/sarmi/Desktop/ferre.sa/index.html" class="cta-button">Agendar Instalación</a>
+        </div>
+      </section>
+      <div class="card-group">
+        <div class="card">
+          <img src="fotos/que-ver-en-Caracas2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ferre.Sa</h5>
+            <p class="card-text">Ferre.sa se encuentra ubicada en Caracas, Venezuela, en la Avenida Tamanaco, diagonal a la estación de servicio, Edificio Eureka, El Llanito, Estado Miranda. Ofrecemos nuestros servicios en toda la capital y estamos comprometidos con la expansión continua de nuestra cobertura.</p>
+            <p>Ser la empresa líder en soluciones ferreteras en Caracas, reconocida por nuestra innovación, calidad y compromiso con el cliente. Aspiramos a expandir nuestra presencia a nivel nacional, ofreciendo productos y servicios que mejoren la vida de nuestros clientes y contribuyan al desarrollo de la comunidad</p>
+          </div>
+          
+        </div>
+        <div class="card">
+          <img src="fotos/10419583_942180822499222_279889352813916691_n.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Luis Enrique Sarmiento Rojas</h5>
+            <p class="card-text"> Destacado vendedor y comerciante con más de 20 años de experiencia en el sector de comercio y productos industriales. Fundó Ferre.Sa con la visión de ofrecer servicios de instalación de la más alta calidad, accesibles para todos los clientes. Tras una exitosa carrera como vendedor y comerciante, Luis decidió aplicar sus vastos conocimientos y habilidades en la creación de esta empresa. Ferre.Sa se especializa en la instalación de bombas de agua y servicios hidroneumáticos, garantizando productos de alta gama y calidad a los mejores precios del mercado</p>
+          </div>
+        </div>
+       </main>
+       <footer id="contacto">
+        <div class="container text-center">
+          <div>
+            <p>&copy; 2023 Ferre.SA - Todos los derechos reservados</p>
+            <div class="social-links d-flex justify-content-center">
+                <a href="hhttps://www.instagram.com/ferre.sa/" target="_blank" class="d-flex align-items-center mx-2">
+                    <i class="bi bi-instagram"></i> Instagram
+                </a>
+                <a href="https://www.facebook.com/Ivt.ferresa" target="_blank" class="d-flex align-items-center mx-2">
+                    <i class="bi bi-facebook"></i> Facebook
+                </a>
+                <a href="https://wa.me/+584141344705" target="_blank" class="d-flex align-items-center mx-2">
+                    <i class="bi bi-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+          </div>
+        </div>
+    </footer>
+    
+      <script>
+        document.getElementById('appointment-form').addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Gracias por agendar una cita. Nos pondremos en contacto contigo pronto.');
+          this.reset();
+        });
+    
+        // Animación suave al desplazarse a las secciones
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+            });
+          });
+        });
+      </script>
+ 
+</body>
+</html>
+    

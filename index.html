@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferre.SA - Distribuidor Mayorista de Sistemas Hidráulicos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">ferre.Sa</div>
+      <div class="nav-links">
+     <a href="#productos">Productos</a>
+     <a href="#cita">agendar cita</a>
+     <a href="nosotros.html">nosotros</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Soluciones Hidráulicas de Alta Calidad</h1>
+        <p>Distribuidor mayorista especializado en sistemas hidráulicos y accesorios</p>
+        <a href="#cita" class="cta-button">Agendar Instalación</a>
+      </div>
+    </section>
+
+    <section id="productos" class="products">
+      <div class="container">
+        <h2>Nuestros Productos</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <svg class="product-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="20" width="80" height="60" rx="5" fill="#1e90ff"/>
+              <rect x="20" y="30" width="60" height="40" rx="2" fill="#f0f8ff"/>
+              <path d="M30 50 Q50 40 70 50" stroke="#1e90ff" stroke-width="2" fill="none"/>
+            </svg>
+            <h3>Tanques de Agua</h3>
+          </div>
+          <div class="product-card">
+            <svg class="product-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="40" fill="#1e90ff"/>
+              <path d="M30 50 Q50 20 70 50 Q50 80 30 50" fill="#f0f8ff"/>
+              <circle cx="50" cy="50" r="5" fill="#1e90ff"/>
+            </svg>
+            <h3>Bombas</h3>
+          </div>
+          <div class="product-card">
+            <svg class="product-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="40" width="60" height="20" fill="#1e90ff"/>
+              <circle cx="30" cy="50" r="5" fill="#f0f8ff"/>
+              <circle cx="70" cy="50" r="5" fill="#f0f8ff"/>
+              <path d="M30 30 L70 30 L70 70 L30 70 Z" stroke="#1e90ff" stroke-width="2" fill="none"/>
+            </svg>
+            <h3>Tuberías PVC y PPR</h3>
+          </div>
+          <div class="product-card">
+            <svg class="product-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 50 L40 30 L60 50 L80 30" stroke="#1e90ff" stroke-width="10" fill="none"/>
+              <circle cx="20" cy="50" r="5" fill="#f0f8ff"/>
+              <circle cx="40" cy="30" r="5" fill="#f0f8ff"/>
+              <circle cx="60" cy="50" r="5" fill="#f0f8ff"/>
+              <circle cx="80" cy="30" r="5" fill="#f0f8ff"/>
+            </svg>
+            <h3>Conexiones y Accesorios</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cita" class="appointment">
+      <div class="container">
+          <h2>Agendar Cita para Instalación</h2>
+          <form id="appointment-form" action="form.php" method="POST" class="speaker-form">
+              <input type="text" name="name" placeholder="Nombre completo" required>
+              <input type="email" name="email" placeholder="Correo electrónico" required>
+              <input type="tel" name="phone" placeholder="Teléfono" required>
+              <select name="product" required>
+                  <option value="">Seleccione un producto</option>
+                  <option value="tanque">Tanque de agua</option>
+                  <option value="bomba">Bomba</option>
+                  <option value="tuberia">Tubería</option>
+                  <option value="accesorios">Accesorios</option>
+                  <option value="consultas">Consultas</option>
+              </select>
+              <textarea name="message" placeholder="Detalles adicionales" rows="4"></textarea>
+              <button type="submit">Solicitar Cita</button>
+
+              <!-- Agregar el script de reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<!-- Añadir el widget de reCAPTCHA al formulario -->
+<div class="g-recaptcha" data-sitekey="TU_CLAVE_DEL_SITE"></div>
+
+          </form>
+      </div>
+  </section>
+  </main>
+
+  <footer id="contacto">
+    <div class="container text-center">
+      <div>
+        <p>&copy; 2023 Ferre.SA - Todos los derechos reservados</p>
+        <div class="social-links d-flex justify-content-center">
+            <a href="hhttps://www.instagram.com/ferre.sa/" target="_blank" class="d-flex align-items-center mx-2">
+                <i class="bi bi-instagram"></i> Instagram
+            </a>
+            <a href="https://www.facebook.com/Ivt.ferresa" target="_blank" class="d-flex align-items-center mx-2">
+                <i class="bi bi-facebook"></i> Facebook
+            </a>
+            <a href="https://wa.me/+584141344705" target="_blank" class="d-flex align-items-center mx-2">
+                <i class="bi bi-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+      </div>
+    </div>
+</footer>
+
+  <script>
+    document.getElementById('appointment-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Gracias por agendar una cita. Nos pondremos en contacto contigo pronto.');
+      this.reset();
+    });
+
+    // Animación suave al desplazarse a las secciones
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
