@@ -1,11 +1,15 @@
-"projects": {
-  "defaultProject": {
-    "architect": {
-      "build": {
-        "options": {
-          "outputPath": "dist/defaultProject/browser"
+{
+    "projects": {
+      "tu-proyecto": {
+        "architect": {
+          "build": {
+            "options": {
+              "outputPath": "dist/tu-proyecto/browser"
+            }
+          }
         }
       }
-    }
+    },
+    "defaultProject": "tu-proyecto"
   }
-}
+  
