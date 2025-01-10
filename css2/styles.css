@@ -1,12 +1,10 @@
-  /* Fondo dinámico */
-
-
-
 :root {
   --primary-color: #1e90ff;
   --secondary-color: #f0f8ff;
   --accent-color: #ff6347;
   --text-color: #333;
+  --yellow-color: #ffff00; /* Añadido color amarillo */
+  --orange-color: #ff4500; /* Añadido color naranja */
 }
 
 body, html {
@@ -15,7 +13,6 @@ body, html {
   font-family: 'Montserrat', sans-serif;
   color: var(--text-color);
   scroll-behavior: smooth;
- 
 }
 
 .container {
@@ -25,9 +22,11 @@ body, html {
 }
 
 header {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 20px 0;
+  background: linear-gradient(90deg, var(--yellow-color), var(--orange-color)); /* Degradado de amarillo a naranja */
+  color: black; /* Color del texto en negro */
+  height: 80px; /* Establecer la altura fija del header */
+  display: flex;
+  align-items: center; /* Centrar verticalmente */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -35,17 +34,19 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%; /* Asegura que el contenido del nav ocupe todo el ancho del header */
 }
 
-.logo {
-  font-size: 28px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+.logo-img {
+  height: 140px; /* Tamaño del logo */
+  width: auto;
+  max-height: 100%; /* Asegura que el logo no se expanda más allá del header */
 }
+
 
 .nav-links a {
-  color: white;
+  color: black; /* Color de los enlaces en negro */
   text-decoration: none;
   margin-left: 20px;
   transition: color 0.3s ease;
@@ -192,6 +193,7 @@ footer .container {
   font-size: 1.5rem;
   margin-right: 5px;
 }
+
 
 
 
