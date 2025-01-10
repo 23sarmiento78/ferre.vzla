@@ -4,7 +4,7 @@
         "architect": {
           "build": {
             "options": {
-              "outputPath": "dist/tu-proyecto/browser"
+              "outputPath": "dist/defaultProject/browser"
             }
           }
         }
